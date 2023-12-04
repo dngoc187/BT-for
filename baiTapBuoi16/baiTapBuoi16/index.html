@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="margin-bottom: 500px">
+        <!-- Bài 1: Tìm số nguyên dương nhỏ nhất sao cho: 1+2+3+...+n > 10000 -->
+        <h3>
+            Bài 1: Tìm số nguyên dương nhỏ nhất sao cho: 1+2+3+...+n > 10000
+        </h3>
+        <div>
+            <button id="btnInTheDiv" onclick="tinhTong()">Tính Số Nguyên</button>
+            <p id="ketQua1">Kết quả: <span id="output"></span></p>
+            __________________________________________________________________________________________
+        </div>
+
+
+        <!-- Bài 2: Viết chương trình nhập vào 2 số x và n sau đó tính tổng: S(n)=x+x^2+x^3+ ... +x^n -->
+        <h3>
+            Bài 2: Viết chương trình nhập vào 2 số x và n sau đó tính tổng: S(n)=x+x^2+x^3+ ... +x^n
+        </h3>
+        <div class="form-group">
+            <p>Mời nhập giá trị x</p>
+            <input class="form-control mb-2 w-25" id="giaTriX">
+            <br>
+            <p>Mời nhập giá trị n</p>
+            <input class="form-control mb-2 w-25" id="giaTriN">
+            <button class="btn btn-success" id="calculate2" onclick="tinhTongLuyThua()">Tính tổng</button>
+        </div>
+        <div id="ketQua2">
+            <div class="alert alert-success mt-2" id="output2"></div>
+            __________________________________________________________________________________________
+        </div>
+
+
+        <!-- Bài 3: Nhập vào n. Tính giai thừa -->
+        <h3>
+            Bài 3: Tính giai thừa
+        </h3>
+        <div class="form-group">
+            <p>Mời nhập giá trị n</p>
+            <input class="form-control mb-2 w-25" id="giaTriGiaiThua">
+            <button class="btn btn-success" id="calculate1" onclick="tinhGiaiThua()">Tính</button>
+        </div>
+        <div id="ketQua3">
+            <div class="alert alert-success mt-2" id="output3"></div>
+            __________________________________________________________________________________________
+        </div>
+
+
+        <!-- Bài 4: Viết chương trình in ra 10 thẻ div. Thẻ ở vị trí chẵn thì background màu đỏ, ngược lại màu xanh -->
+        <h3>
+            <p>Bài 4: Viết chương trình in ra 10 thẻ div. Thẻ ở vị trí chẵn thì background màu đỏ, ngược lại thì màu
+            xanh</p>
+
+        </h3>
+        <button class="btn btn-success" onclick="in10TheDiv()">
+            In 10 thẻ div   
+        </button>
+        <div id="output4">
+            <div class="alert alert-success mt-2">Hi</div>
+        </div>
+        <div>__________________________________________________________________________________________</div>
+
+
+        <!-- Bài 5: Viết chương trình có 1 ô input, một nút button. khi click vào nut button thì in ra các số nguyên tố từ 1 tới giá trị của ô input -->
+        <h3>
+            Bài 5: Tìm số nguyên tố
+        </h3>
+        <div class="form-group">
+            <p>Mời nhập số cần tìm số nguyên tố</p>
+            <input class="form-control mb-2 w-25" id="soNguyenTo">
+            <button class="btn btn-success" id="calculate5" onclick="timVaInSoNguyenTo()">Tìm</button>
+        </div>
+        <div id="output5" class="mt-2 alert alert-success"></div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+    </div>
+</body>
+
+</html>
